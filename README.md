@@ -1,7 +1,6 @@
-# In VS Code terminal
-cd D:\vs code\portfolio\index.html
 
-# Initialize Git (if not already done)
+cd D:\vs code\portfolio
+
 git init
 git remote add origin https://github.com/KarnanLokeshkumar/portfolio-site.git
 git add .
