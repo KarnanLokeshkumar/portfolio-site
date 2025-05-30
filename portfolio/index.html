@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm [Lokeshkumar], a [Web developer].</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+            <img src="profile.jpg" width="50" height="60"alt="Profile Picture">
+            <p>Hi, I'm [Lokeshkumar]. I'm a [Fullstack developer] with a passion for [Web development ]. I specialize in [Java and python ].</p>
+        </section>
+      <section id="projects">
+    <h1>Projects</h1>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="images/portfolio.jpg" alt="Portfolio Website">
+            <h2>Personal Portfolio Website</h2>
+            <p>Built a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            <a href="https://yourusername.github.io">Live Demo</a>
+            <a href="https://github.com/yourusername/portfolio">GitHub</a>
+        </div>
+        <div class="project-card">
+            <img src="images/adventure-game.jpg" alt="Adventure Game">
+            <h2>Text-Based Adventure Game</h2>
+            <p>Developed a Python-based text adventure game with multiple rooms and decision-based outcomes.</p>
+            <a href="#">Live Demo</a> <!-- Replace with Replit or web version link if available -->
+            <a href="https://github.com/yourusername/adventure-game">GitHub</a>
+        </div>
+        <div class="project-card">
+            <img src="images/weather-app.jpg" alt="Weather App">
+            <h2>Weather App</h2>
+            <p>Created a command-line weather app using Python and OpenWeatherMap API to fetch real-time weather data.</p>
+            <a href="#">Live Demo</a> <!-- Replace with web version link if available -->
+            <a href="https://github.com/yourusername/weather-app">GitHub</a>
+        </div>
+    </div>
+</section>
+        <section id="skills">
+            <h1>Skills</h1>
+            <ul class="skills-list">
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-js"></i> JavaS cript</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-react"></i> React</li>
+ <li><i class="fab fa-java"></i> Java</li>
+                <!-- Add more skills with icons -->
+            </ul>
+        </section>
+        <section id="contact">
+    <h1>Contact</h1>
+    <form action="https://formspree.io/lokesh019k@gmail.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+    </main>
+<footer>
+    <p>© 2025 [Lokeshkumar]. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/loke.sh._.19 target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Lokesh" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/Lokeshkumar Karnan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.indeed.com/Lokeshkumar Karnan" target="_blank"><i class="fas fa-briefcase"></i></a>
+        <a href="https://www.naukri.com/Lokeshkumar Karnan" target="_blank"><i class="fas fa-briefcase"></i></a>
+    </div>
+</footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
